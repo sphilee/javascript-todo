@@ -31,7 +31,7 @@ var User = (function () {
         this.showAllTask();
         return this;
     }
-    User.prototype.showTasks = function (status) {
+    User.prototype.showTaskOneStatus = function (status) {
         this.tasks.filter(function (task) {
             return task.status === status;
         }).forEach(function (task) {

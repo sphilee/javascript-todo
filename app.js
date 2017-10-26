@@ -15,7 +15,7 @@ var common = require('./common.js');
             user.addTask(title);
         } else if (cmd === "show") {
             var status = common.STATUS_CONSTANT[splitInput[1]];
-            user.showTasks(status);
+            user.showTaskOneStatus(status);
         } else if (cmd === "update") {
             var id = splitInput[1];
             var status = common.STATUS_CONSTANT[splitInput[2]];
